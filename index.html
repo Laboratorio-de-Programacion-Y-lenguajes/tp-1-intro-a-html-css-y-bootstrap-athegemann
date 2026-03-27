@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,31 @@
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
     <!-- Navbar (COMPLETAR: agregar logo, links activos, menú colapsable) -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
             <!-- TODO: agregar toggler y nav-items -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -35,16 +55,38 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="assets/images/article-1.jpg" class="card-img-top" alt="Artículo 1">
+                        <img src="assets/images/UNTDF.jpg" class="card-img-top" alt="Logo de la UNTDF">
                         <div class="card-body">
-                            <h5 class="card-title">Primer Artículo</h5>
-                            <p class="card-text text-muted">Autor: Tu Nombre</p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <h5 class="card-title">Mi Universidad</h5>
+                            <p class="card-text text-muted">Autor: Albaro Hegemann</p>
+                            <p class="card-text">Descubre más sobre mi experiencia en la Universidad Nacional de Tierra del Fuego.</p>
                             <a href="#" class="btn btn-primary btn-sm">Leer más</a>
                         </div>
                     </div>
                 </div>
                 <!-- TODO: agregar 2 más -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/Fedora_logo.png" class="card-img-top" alt="Logo del Proyecto Fedora">
+                        <div class="card-body">
+                            <h5 class="card-title">Mi Distribución Actual</h5>
+                            <p class="card-text text-muted">Autor: Albaro Hegemann</p>
+                            <p class="card-text">Descubre más sobre mi experiencia con la distribución Fedora.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/KDE_logo.png" class="card-img-top" alt="Logo de KDE">
+                        <div class="card-body">
+                            <h5 class="card-title">Mi entorno de Escritorio</h5>
+                            <p class="card-text text-muted">Autor: Albaro Hegemann</p>
+                            <p class="card-text">Descubre más sobre mi experiencia con el entorno de escritorio Plasma desarrollado por KDE.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -60,4 +102,5 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
